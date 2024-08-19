@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Voider_Crew": {
+      "commandName": "Project",
+      "workingDirectory": "D:\\SteamLibrary\\steamapps\\common\\Void Crew"
+    }
+  }
+}

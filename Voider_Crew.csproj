@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <RootNamespace>Voider_Crew</RootNamespace>
+    </PropertyGroup>
+    <!--Thunderstore Info-->
+    <PropertyGroup>
+        <Product>Voider_Crew</Product>
+        <Description>This mod increases the player max to 8 per lobby.</Description>
+        <RepositoryUrl>https://github.com/bls220/Voider_Crew</RepositoryUrl>
+    </PropertyGroup>
+</Project>
