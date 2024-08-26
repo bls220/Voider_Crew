@@ -8,4 +8,9 @@
         <Description>This mod increases the player max to 8 per lobby.</Description>
         <RepositoryUrl>https://github.com/bls220/Voider_Crew</RepositoryUrl>
     </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="VoidManager">
+          <HintPath>$(GamePath)BepInEx\plugins\VoidManager\VoidManager.dll</HintPath>
+        </Reference>
+    </ItemGroup>
 </Project>

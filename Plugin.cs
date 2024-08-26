@@ -5,13 +5,15 @@ using HarmonyLib;
 
 namespace Voider_Crew;
 
-[BepInPlugin(MyPluginInfo.PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]
+[BepInPlugin(ThisAssembly.PluginGUID, ThisAssembly.PluginTitle, ThisAssembly.AssemblyFileVersion)]
+[BepInProcess("Void Crew.exe")]
+[BepInDependency("VoidManager")]
 public partial class Plugin : BaseUnityPlugin
 {
     public static ManualLogSource? StaticLogger { get; private set; }
     public static Plugin Instance { get; private set; } = null!;
 
-    private static readonly Harmony _harmony = new(MyPluginInfo.PLUGIN_GUID);
+    private static readonly Harmony _harmony = new(ThisAssembly.PluginGUID);
 
     protected static int NewMaxPlayers { get; private set; } = 8;
 
@@ -26,7 +28,7 @@ public partial class Plugin : BaseUnityPlugin
     private void Awake()
     {
         StaticLogger = Instance.Logger;
-        Logger.LogDebug($"Plugin {MyPluginInfo.PLUGIN_GUID} is loading!");
+        Logger.LogDebug($"Plugin {ThisAssembly.PluginGUID} is loading!");
         try
         {
             _harmony.PatchAll();
@@ -34,9 +36,9 @@ public partial class Plugin : BaseUnityPlugin
         catch (HarmonyException ex)
         {
             Logger.LogError(ex.Message);
-            Logger.LogError($"Plugin {MyPluginInfo.PLUGIN_GUID} failed to patch!");
+            Logger.LogError($"Plugin {ThisAssembly.PluginGUID} failed to patch!");
             return;
         }
-        Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
+        Logger.LogInfo($"Plugin {ThisAssembly.PluginGUID} is loaded!");
     }
 }
