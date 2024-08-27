@@ -9,6 +9,9 @@
         <RepositoryUrl>https://github.com/bls220/Voider_Crew</RepositoryUrl>
     </PropertyGroup>
     <ItemGroup>
+        <ThunderDependency Include="VoidCrewModdingTeam-VoidManager-1.1.7" />
+    </ItemGroup>
+    <ItemGroup>
         <Reference Include="VoidManager">
           <HintPath>$(GamePath)BepInEx\plugins\VoidManager\VoidManager.dll</HintPath>
         </Reference>
