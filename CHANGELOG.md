@@ -7,7 +7,11 @@ The format is based on [Common Changelog](https://common-changelog.org),
 and this project adheres to [Semantic Versioning v2](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
+
+## [1.1.0] - 2024-09-05
+### Changed
 - Bumped Void Manager version to 1.1.8
+### Removed
 - Removed patch for 'Activate' button
 
 ## [1.0.1] - 2024-08-26
@@ -33,6 +37,7 @@ and this project adheres to [Semantic Versioning v2](https://semver.org/spec/v2.
 _Initial Release_
 
 
+[1.1.0]: https://github.com/bls220/Voider_Crew/releases/tag/v1.1.0
 [1.0.1]: https://github.com/bls220/Voider_Crew/releases/tag/v1.0.1
 [1.0.0]: https://github.com/bls220/Voider_Crew/releases/tag/v1.0.0
 [0.0.3]: https://github.com/bls220/Voider_Crew/commit/eaab4f900c7768997e8c012e5947c39f1c75ea0d
