@@ -1,4 +1,5 @@
 <Project>
+    <Import Project="$(SolutionDir)Directory.Build.targets"/>
     <Target Name="GenerateVoidManagerInfo" BeforeTargets="BeforeCompile;CoreCompile" Inputs="$(MSBuildAllProjects)" Outputs="$(IntermediateOutputPath)VoidManagerInfo.g.cs">
         <PropertyGroup>
             <GeneratedText><![CDATA[

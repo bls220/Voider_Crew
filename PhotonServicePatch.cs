@@ -6,6 +6,7 @@ namespace Voider_Crew;
 
 public partial class Plugin
 {
+#if DEBUG
     [HarmonyPatch]
     private static class PhotonServicePatch
     {
@@ -17,4 +18,5 @@ public partial class Plugin
             return PhotonNetwork.IsMasterClient;
         }
     }
+#endif
 }

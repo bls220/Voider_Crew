@@ -7,7 +7,7 @@ namespace Voider_Crew;
 
 [BepInPlugin(ThisAssembly.PluginGUID, ThisAssembly.PluginTitle, ThisAssembly.AssemblyFileVersion)]
 [BepInProcess("Void Crew.exe")]
-[BepInDependency("VoidManager")]
+[BepInDependency(VoidManager.MyPluginInfo.PLUGIN_GUID)]
 public partial class Plugin : BaseUnityPlugin
 {
     public static ManualLogSource? StaticLogger { get; private set; }
@@ -27,7 +27,7 @@ public partial class Plugin : BaseUnityPlugin
     [System.Diagnostics.CodeAnalysis.SuppressMessage("CodeQuality", "IDE0051:Remove unused private members")]
     private void Awake()
     {
-        StaticLogger = Instance.Logger;
+        StaticLogger = Logger;
         Logger.LogDebug($"Plugin {ThisAssembly.PluginGUID} is loading!");
         try
         {

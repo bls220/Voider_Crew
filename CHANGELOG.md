@@ -7,6 +7,8 @@ The format is based on [Common Changelog](https://common-changelog.org),
 and this project adheres to [Semantic Versioning v2](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
+- Bumped Void Manager version to 1.1.8
+- Removed patch for 'Activate' button
 
 ## [1.0.1] - 2024-08-26
 
